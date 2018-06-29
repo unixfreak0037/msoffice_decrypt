@@ -40,4 +40,8 @@ if decryptor.is_decryptable:
     if password:
         decryptor.decrypt(password)
 ```
-
+## Requirements
+Requirements may be installed with the following command
+```
+pip3 install -r requirements.txt
+```
