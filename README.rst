@@ -10,6 +10,16 @@ solves a specific use case for myself.
 Installation
 ------------
 
+Stable release
+~~~~~~~~~~~~~
+
+::
+
+   pip3 install-U msoffice_decrypt
+
+From GitHub
+~~~~~~~~~~~
+
 ::
 
    pip3 install-U git+https://github.com/unixfreak0037/msoffice_decrypt
