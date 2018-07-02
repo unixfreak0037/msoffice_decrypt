@@ -15,7 +15,7 @@ Stable release
 
 ::
 
-   pip3 install-U msoffice_decrypt
+   pip3 install -U msoffice_decrypt
 
 From GitHub
 ~~~~~~~~~~~
