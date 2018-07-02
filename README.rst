@@ -22,7 +22,7 @@ From GitHub
 
 ::
 
-   pip3 install-U git+https://github.com/unixfreak0037/msoffice_decrypt
+   pip3 install -U git+https://github.com/unixfreak0037/msoffice_decrypt
 
 Examples
 --------
