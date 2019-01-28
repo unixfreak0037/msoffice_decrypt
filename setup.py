@@ -14,7 +14,7 @@ from setuptools import setup
 from codecs import open
 from os import path
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 description = "Python tool and library for decrypting encrypted MS Office " \
               "files with a password"
 
