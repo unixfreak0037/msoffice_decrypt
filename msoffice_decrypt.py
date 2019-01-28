@@ -427,7 +427,8 @@ class MSOfficeDecryptor(object):
         # and generated as specified in section 2.3.4.8, to obtain the Verifier value.
         # The resulting Verifier value MUST be an array of 16 bytes.
 
-        aes = AES.new(keyDerived, AES.MODE_ECB, salt)
+        #aes = AES.new(keyDerived, AES.MODE_ECB, salt)
+        aes = AES.new(keyDerived, AES.MODE_ECB)
         Verifier = aes.decrypt(encryptedVerifier)
         #logging.debug("encryptedVerifier = {}".format(hexlify(encryptedVerifier)))
         #logging.debug("decryptedVerifier = {}".format(hexlify(Verifier)))
@@ -435,7 +436,8 @@ class MSOfficeDecryptor(object):
         # (3) Decrypt the EncryptedVerifierHash field of the EncryptionVerifier structure to obtain the hash of the Verifier value.
         # The number of bytes used by the encrypted Verifier hash MUST be 32.
         # The number of bytes used by the decrypted Verifier hash is given by the VerifierHashSize field, which MUST be 20.
-        aes = AES.new(keyDerived, AES.MODE_ECB, salt)
+        #aes = AES.new(keyDerived, AES.MODE_ECB, salt)
+        aes = AES.new(keyDerived, AES.MODE_ECB)
         #logging.debug("length of encryptedVerifierHash = {}".format(len(encryptedVerifierHash)))
         decryptedVerifierHash = aes.decrypt(encryptedVerifierHash)[:20]
         #logging.debug("encryptedVerifierHash = {}".format(hexlify(encryptedVerifierHash)))
