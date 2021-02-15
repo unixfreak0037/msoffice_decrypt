@@ -1,6 +1,8 @@
 msoffice_decrypt
 ================
 
+**Don't use this. Use nolze's project instead.**
+
 msoffice_decrypt is a Python tool and library for decrypting encrypted
 MS Office files with a password. This work is based on
 https://github.com/nolze/msoffcrypto-tool. I created this project to
